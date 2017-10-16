@@ -1,0 +1,57 @@
+		body
+		{
+			background-color: #ffffff;
+		}
+		
+		#topmenu th
+		{
+			font-size: 200%;
+			color: #2fd62c;
+			font-family: courier;
+			border: 2px solid powderblue;
+		}
+		
+		#topmenu th:hover
+		{
+			font-size: 250%;
+			background-color: #3be6ef;
+			transition: 0.3s;
+		}
+		
+		.hyperconnect
+		{
+			color: #2fd62c;
+			font-family: courier;
+		}
+		
+		.button
+		{
+			vertical-align: middle;
+			display: inline-block;
+			background-color: #ffffff;
+			border: 2px solid powderblue;
+			color: #44cdff;
+			font-size: 20px;
+			padding: 20px;
+			width: inherit;
+			margin: 5px;
+			transition: all 1s;
+			cursor: pointer;
+		}
+		.button img
+		{
+			width: 0px;
+			height: 0px;
+		}
+		
+		.button:hover
+		{
+			background-color: #d7ffc9;
+			padding-left: 35px;
+		}
+		.button:hover img
+		{
+			width: 17px;
+			height: 17px;
+			transition:width 1s;
+		}

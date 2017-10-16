@@ -6,7 +6,8 @@
 		<meta name = "author" content = "Chuki">
 		<meta name = "keywords" content = "HTML,CSS,JavaScript">
 		<meta name = "viewpoint" content = "width = divice-width, initial-scale = 1.0">
-		<link rel = "icon" type = "image/png" href = "">
+		<link rel = "icon" type = "image/png" href = "friends.jpg">
+		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div id = "topmenu">
@@ -14,13 +15,13 @@
 				<tbody>
 					<tr>
 						<th>
-						<a href= "" class = "hyperconnect">home</a>
+						<a href= "index.html" class = "hyperconnect">home</a>
 						</th>
 						<th>
 						<a href= "" class = "hyperconnect">Activity</a>
 						</th>
 						<th>
-						<a href= "" class = "hyperconnect">Works</a>
+						<a href= "works.html" class = "hyperconnect">Works</a>
 						</th>
 					<tr>
 				</tbody>
@@ -40,86 +41,25 @@
 					contact me :
 				</button>
 				<br>
-				<button class = "button" id = "github" style = "display:none">
+				<button class = "button" id = "github" style = "display:none" onclick = "location.href = 'https://github.com/hangalice2156' ">
 					<img src = "Github_img.png">
 					Github
 				</button>
-				<button class = "button" id = "facebook" style = "display:none">
+				<button class = "button" id = "facebook" style = "display:none" onclick = "location.href = 'https://www.facebook.com/hong.l.jie.5' ">
 					<img src = "Facebook_img.png">
 					Facebook
 				</button>
-				
+			</div>
+			
+			<div id = "properities">
 			</div>
 		</div>
-		
-		<style>
-		
-		body
-		{
-			background-color: #ffffff;
-		}
-		
-		#topmenu th
-		{
-			font-size: 200%;
-			color: #2fd62c;
-			font-family: courier;
-			border: 2px solid powderblue;
-		}
-		
-		#topmenu th:hover
-		{
-			font-size: 250%;
-			background-color: #3be6ef;
-			transition: 0.3s;
-		}
-		
-		.hyperconnect
-		{
-			color: #2fd62c;
-			font-family: courier;
-		}
-		
-		.button
-		{
-			vertical-align: middle;
-			display: inline-block;
-			background-color: #ffffff;
-			border: 2px solid powderblue;
-			color: #44cdff;
-			font-size: 20px;
-			padding: 20px;
-			width: inherit;
-			margin: 5px;
-			transition: all 1s;
-			cursor: pointer;
-		}
-		.button img
-		{
-			width: 0px;
-			height: 0px;
-		}
-		
-		.button:hover
-		{
-			background-color: #d7ffc9;
-			padding-left: 35px;
-		}
-		.button:hover img
-		{
-			width: 17px;
-			height: 17px;
-			transition:width 1s;
-		}
-		
-		
-		</style>
 		
 		<script>
 		function DisplayInfo()
 		{
-			document.getElementById("github").style = "display:inline-block"
-			document.getElementById("facebook").style = "display:inline-block"
+			document.getElementById("github").style = "display: inline-block; transition: 1s"
+			document.getElementById("facebook").style = "display: inline-block; transition: 1s"
 		}
 		
 		</script>
