@@ -35,24 +35,21 @@
 				A student in NCKU CSIE department, still learning new things about the world.
 				</font>
 				<br>
-				<button class = "button" onclick = "DisplayInfo()">contact me :</button>
+				<button class = "button" onclick = "DisplayInfo()">
+					<img src = "friends.jpg">
+					contact me :
+				</button>
 				<br>
 				<button class = "button" id = "github" style = "display:none">
-					<span style = "display:none">
-					<img src = "Github_img.png" style = "width: 20px; height: 20px">
-					</span>Github
+					<img src = "Github_img.png">
+					Github
 				</button>
 				<button class = "button" id = "facebook" style = "display:none">
-					<img>
+					<img src = "Facebook_img.png">
 					Facebook
 				</button>
 				
 			</div>
-			<br>
-			<a href = "https://github.com/hangalice2156">Github</a>
-			<br>
-			<a href = "https://www.facebook.com/hong.l.jie.5">Facebook</a>
-			</font>
 		</div>
 		
 		<style>
@@ -74,15 +71,7 @@
 		{
 			font-size: 250%;
 			background-color: #3be6ef;
-			
-			animation-name: emhpasis;
-			animation-duration: 0.3s;
-		}
-		
-		@keyframes emhpasis
-		{
-			from {font-size: 200%;}
-			to {font-size: 250%; background-color #3be6ef}
+			transition: 0.3s;
 		}
 		
 		.hyperconnect
@@ -105,15 +94,22 @@
 			transition: all 1s;
 			cursor: pointer;
 		}
+		.button img
+		{
+			width: 0px;
+			height: 0px;
+		}
 		
 		.button:hover
 		{
 			background-color: #d7ffc9;
 			padding-left: 35px;
 		}
-		.button:hover span
+		.button:hover img
 		{
-			display: inline-block;
+			width: 17px;
+			height: 17px;
+			transition:width 1s;
 		}
 		
 		
