@@ -27,5 +27,22 @@
 				</tbody>
 			</table>
 		</div>
+		
+		<div  id = "works">
+			<h1 class = "work_1">Prototype</h1>
+			<div class = "portotype">
+				<img src = "prototype.jpg" style = "width: 40%; height:70%;">
+			</div>
+		</div>
+
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			disp1 = function(ev)
+			{
+				$('.prototype').fadeOut(1000);
+			}
+			
+			jQuery('.work_1').mouseover(disp1);
+		</script>
 	</body>
 </html>

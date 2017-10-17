@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name = "discription" content = "NCKU web design first homework">
 		<meta name = "author" content = "Chuki">
-		<meta name = "keywords" content = "HTML,CSS,JavaScript">
+		<meta name = "keywords" content = "HTML,CSS,JavaScript,NCKU,WebDesign">
 		<meta name = "viewpoint" content = "width = divice-width, initial-scale = 1.0">
 		<link rel = "icon" type = "image/png" href = "friends.jpg">
 		<link href="style.css" rel="stylesheet" type="text/css">
@@ -29,39 +29,40 @@
 		</div>
 		
 		<div id = "maincontent">
-			<h1 style = "text-align: center; text-shadow: #17dde8">Chuki</h1>
-			<font style = "font-size: 150%">
+			<h1>Chuki</h1>
 			<div id = "selfintro">
 				<font style = "font-family: courier;">
 				A student in NCKU CSIE department, still learning new things about the world.
 				</font>
 				<br>
-				<button class = "button" onclick = "DisplayInfo()">
+				<button class = "button" id = "contact" onclick = "DisplayInfo()">
 					<img src = "friends.jpg">
 					contact me :
 				</button>
 				<br>
-				<button class = "button" id = "github" style = "display:none" onclick = "location.href = 'https://github.com/hangalice2156' ">
+				<button class = "button" id = "github" style = "padding: 0px; overflow: hidden;" onclick = "location.href = 'https://github.com/hangalice2156' ">
 					<img src = "Github_img.png">
-					Github
+					<p id = "buttoncontent1" style = "display: none;">Github</p>
 				</button>
-				<button class = "button" id = "facebook" style = "display:none" onclick = "location.href = 'https://www.facebook.com/hong.l.jie.5' ">
+				<button class = "button" id = "facebook" style = "padding: 0px; overflow: hidden;" onclick = "location.href = 'https://www.facebook.com/hong.l.jie.5' ">
 					<img src = "Facebook_img.png">
-					Facebook
+					<p id = "buttoncontent2" style = "display: none;">Facebook</p>
 				</button>
 			</div>
 			
-			<div id = "properities">
+			<div id = "properties">
+				<h1>Properties</h1>
 			</div>
 		</div>
 		
 		<script>
 		function DisplayInfo()
 		{
-			document.getElementById("github").style = "display: inline-block; transition: 1s"
-			document.getElementById("facebook").style = "display: inline-block; transition: 1s"
+			document.getElementById("github").style = "transition: 1s; padding: 20px;;"
+			document.getElementById("facebook").style = "transition: 1s; padding: 20px;"
+			document.getElementById("buttoncontent1").style = " display: inline-block;"
+			document.getElementById("buttoncontent2").style = " display: inline-block;"
 		}
-		
 		</script>
 	</body>
 </html>

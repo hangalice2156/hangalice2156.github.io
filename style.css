@@ -1,6 +1,13 @@
 		body
 		{
 			background-color: #ffffff;
+			font-size: 120%;
+		}
+		
+		h1
+		{
+			text-shadow: 1px 1px #17dde8;
+			text-align: center;
 		}
 		
 		#topmenu th
@@ -42,6 +49,7 @@
 		{
 			width: 0px;
 			height: 0px;
+			transition:width 1s;
 		}
 		
 		.button:hover
@@ -53,5 +61,4 @@
 		{
 			width: 17px;
 			height: 17px;
-			transition:width 1s;
 		}
